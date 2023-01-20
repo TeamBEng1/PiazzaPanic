@@ -10,8 +10,8 @@ import com.badlogic.gdx.utils.ScreenUtils;
 
 import java.util.ArrayList;
 
+
 public class PiazzaPanic extends ApplicationAdapter {
-	//muaz
 	private SpriteBatch batch;
 	private ArrayList<Cook> cooks;
 	private ArrayList<Customer> customers;
