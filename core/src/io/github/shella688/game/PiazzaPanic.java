@@ -52,15 +52,16 @@ public class PiazzaPanic extends ApplicationAdapter {
 
 		//create pantry
 		Texture lettuceTexture = new Texture(Gdx.files.internal("bucket.png"));
-		Texture onionsTexture = new Texture(Gdx.files.internal("bucket.png"));
+		pantry.add(new Pantry("lettuce", lettuceTexture, 200, 20));
 		Texture tomatoesTexture = new Texture(Gdx.files.internal("bucket.png"));
+		pantry.add(new Pantry("tomatoes", tomatoesTexture, 220, 20));
+		Texture onionsTexture = new Texture(Gdx.files.internal("bucket.png"));
+		pantry.add(new Pantry("onions", onionsTexture, 240, 20));
 		Texture pattyTexture = new Texture(Gdx.files.internal("bucket.png"));
+		pantry.add(new Pantry("patty", pattyTexture, 260, 20));
 		Texture bunsTexture = new Texture(Gdx.files.internal("bucket.png"));
-		pantry.add(new Pantry("lettuce", lettuceTexture, 700, 20));
-		pantry.add(new Pantry("tomatoes", tomatoesTexture, 700, 30));
-		pantry.add(new Pantry("onions", onionsTexture, 700, 40));
-		pantry.add(new Pantry("patty", pattyTexture, 700, 50));
-		pantry.add(new Pantry("buns", bunsTexture, 700, 60));
+		pantry.add(new Pantry("buns", bunsTexture, 280, 20));
+
 
 	}
 
@@ -90,6 +91,10 @@ public class PiazzaPanic extends ApplicationAdapter {
 
 		for (CookingStation cookingStation : cookingStations) {
 			cookingStation.draw(batch);
+		}
+
+		for (Pantry pantry : pantry) {
+			pantry.draw(batch);
 		}
 		batch.end();
 	}
