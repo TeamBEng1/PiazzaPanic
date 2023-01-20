@@ -10,7 +10,7 @@ import com.badlogic.gdx.utils.ScreenUtils;
 
 import java.util.ArrayList;
 
-//This comment is from Muaz
+
 public class PiazzaPanic extends ApplicationAdapter {
 	//zac
 	private SpriteBatch batch;
