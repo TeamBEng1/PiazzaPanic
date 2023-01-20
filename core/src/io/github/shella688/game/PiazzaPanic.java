@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 
 public class PiazzaPanic extends ApplicationAdapter {
-	//zac
 	private SpriteBatch batch;
 	private ArrayList<Cook> cooks;
 	private ArrayList<Customer> customers;
