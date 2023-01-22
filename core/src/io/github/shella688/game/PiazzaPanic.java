@@ -43,12 +43,9 @@ public class PiazzaPanic extends ApplicationAdapter {
 		}
 
 		//create texture for cooking stations
-		Texture cuttingTexture = new Texture(Gdx.files.internal("droplet.png"));
-		cookingStations.add(new CookingStation("CuttingStation", cuttingTexture, 200, 200));
-		Texture fryingTexture = new Texture(Gdx.files.internal("droplet.png"));
-		cookingStations.add(new CookingStation("FryingStation", fryingTexture, 300, 200 ));
-		Texture servingTexture = new Texture(Gdx.files.internal("droplet.png"));
-		cookingStations.add(new CookingStation("ServingStation", servingTexture, 400, 200));
+		cookingStations.add(new CuttingStation("CuttingStation1", 200, 200, null));
+		cookingStations.add(new FryingStation("FryingStation1", 300, 200, null));
+		cookingStations.add(new ServingStation("ServingStation1", 400, 200, null));
 
 		//create pantry
 		Texture lettuceTexture = new Texture(Gdx.files.internal("bucket.png"));
